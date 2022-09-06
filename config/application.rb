@@ -37,6 +37,7 @@ module Phase4CookiesInRailsApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    # NOTE: MUST ADD THESE LINES MANUALLY!!
     # Adding back cookies and session middleware
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
